@@ -16,6 +16,12 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        val mapsApiKey: String? = project.findProperty("MAPS_API_KEY") as? String
+        if (mapsApiKey != null) {
+            resValue("string", "google_maps_key", mapsApiKey)
+        } else {
+            println("Warning: MAPS_API_KEY is not set in local.properties!")
+        }
     }
 
     buildTypes {
