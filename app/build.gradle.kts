@@ -48,6 +48,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation("androidx.activity:activity-ktx:1.6.1")
     implementation("androidx.fragment:fragment-ktx:1.5.5")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
     implementation(libs.play.services.maps)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
